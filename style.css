@@ -1,0 +1,374 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "popins", sans-serif;
+}
+.sidenav {
+  height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #fbd5b5;
+  overflow-x: hidden;
+  padding-top: 60px;
+  transition: 0.5s;
+}
+
+.sidenav a {
+  padding: 8px 8px 8px 32px;
+  text-decoration: none;
+  font-size: 25px;
+  color: #2a2a3a;
+  display: block;
+  transition: 0.3s;
+}
+
+.sidenav a:hover {
+  color: #6c385c;
+}
+
+.sidenav .closebtn {
+  position: absolute;
+  top: 0;
+  right: 25px;
+  font-size: 36px;
+  margin-left: 50px;
+}
+
+#main {
+  transition: margin-left 0.5s;
+  /* padding: 20px; */
+}
+div.navgap {
+  height: 50px;
+}
+@media screen and (max-height: 450px) {
+  .sidenav {
+    padding-top: 15px;
+  }
+  .sidenav a {
+    font-size: 18px;
+  }
+}
+
+.main-nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c385c;
+  padding: 1rem 2rem;
+  position: fixed;
+  width: 100%;
+}
+
+.main-nav i {
+  color: #fbd5b5;
+  font-size: 1.5rem;
+}
+
+.main-nav span#logoname {
+  color: #fbd5b5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+}
+
+/*=====================
+      hero section
+  =====================*/
+main section.hero {
+  background-image: url("images/img1.jpg");
+}
+main section.hero2 {
+  background-image: url("images/mainimg.jpg");
+}
+main section.hero3 {
+  background-image: url("images/img2.jpg");
+}
+main section.hero,
+main section.hero2,
+main section.hero3 {
+  height: 100vh;
+  width: 100%;
+  background-position: center;
+  background-size: cover;
+}
+
+/*=====================
+      about section 
+  
+  =====================*/
+
+section.About {
+  height: 100vh;
+  padding-block: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c385c;
+}
+
+div.left {
+  background-color: #a48bda;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+div.right {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 70%;
+  padding: 1.5em;
+  color: #fbd5b5;
+  font-size: 2rem;
+}
+
+div.left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section.About {
+    flex-direction: column;
+  }
+  section div.left,
+  section div.right {
+    width: 100%;
+  }
+
+  section div.right {
+    font-size: 1.2rem;
+    background-color: #6c385c;
+    height: min-content;
+  }
+}
+
+/*=====================
+      about rsg
+  
+  =====================*/
+
+section.Aboutrsg {
+  height: 100vh;
+  padding-block: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c385c;
+}
+
+section.Aboutrsg div.left {
+  background-color: #a48bda;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.Aboutrsg div.right {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 70%;
+  padding: 1.5em;
+  color: #fbd5b5;
+  font-size: 2rem;
+}
+
+section.Aboutrsg div.left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section.Aboutrsg {
+    flex-direction: column;
+  }
+  section div.left,
+  section div.right {
+    width: 100%;
+  }
+
+  section div.right {
+    font-size: 1.2rem;
+    background-color: #6c385c;
+    height: min-content;
+  }
+}
+section.gamedownload {
+  height: 100vh;
+  padding-block: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6c385c;
+}
+
+section.gamedownload div.left {
+  background-color: #a48bda;
+  height: 100%;
+  width: 30%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.gamedownload div.right {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 70%;
+  padding: 1.5em;
+  color: #fbd5b5;
+  font-size: 2rem;
+}
+
+section.gamedownload div.left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section.gamedownload {
+    flex-direction: column;
+  }
+  section div.left,
+  section div.right {
+    width: 100%;
+  }
+
+  section div.right {
+    font-size: 1.2rem;
+    background-color: #6c385c;
+    height: min-content;
+  }
+}
+
+/*=====================
+      download section
+  
+  =====================*/
+.downloaddiv {
+  width: 100%;
+  /* background-color: #a48bda; */
+  text-align: center;
+  height: 60px;
+}
+
+.downloaddiv a {
+  text-decoration: none;
+  color: #fbd5b5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+  border: 3px solid #fbd5b5;
+  padding: 0.5em;
+  transition: all 0.3s;
+}
+.downloaddiv a:hover {
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+  padding: 0.5em;
+  background-color: #fbd5b5;
+  color: #6c385c;
+}
+
+footer {
+  background-color: #2a2a3a;
+  color: #fbd5b5;
+  text-align: center;
+  padding: 1em;
+  height: 70vh;
+}
+
+/* footer */
+
+section.footer {
+  height: 70vh;
+  padding-block: 80px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #2a2a3a;
+}
+
+section.footer div.left {
+  background-color: #2a2a3a;
+  height: 100%;
+  width: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+section.footer div.right {
+  /* background-color: bisque; */
+  height: 100%;
+  width: 0%;
+  padding: 1.5em;
+  color: #fbd5b5;
+  font-size: 2rem;
+}
+
+section.footer div.left img {
+  width: 100%;
+}
+
+@media screen and (max-width: 768px) {
+  section.footer {
+    flex-direction: column;
+  }
+  section div.left,
+  section div.right {
+    width: 100%;
+  }
+
+  section div.right {
+    font-size: 1.2rem;
+    background-color: #6c385c;
+    height: min-content;
+  }
+}
+
+.footer ul {
+  list-style: none;
+}
+
+.footer ul li {
+  padding: 10px 0;
+  text-decoration: none;
+}
+.footer h1 {
+  color: #a48bda;
+  font-size: 2rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+}
+.footer ul li a {
+  text-decoration: none;
+  color: #fbd5b5;
+  font-size: 1.5rem;
+  font-weight: bold;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  font-family: "oswald", sans-serif;
+}
+
+::-webkit-scrollbar {
+  width: 4px;
+}
+::-webkit-scrollbar-thumb {
+  background: #fbd5b5;
+}
+::-webkit-scrollbar-track {
+  background-color: #6c385c;
+}
